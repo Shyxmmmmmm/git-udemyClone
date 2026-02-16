@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0%;
   margin: 0%;
 }
@@ -11,7 +11,7 @@ body {
   font-style: normal;
 }
 
-.main{
+.main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -19,40 +19,65 @@ body {
   border-bottom: 1px solid black;
   gap: 10px;
   align-items: center;
-
+  position: sticky;
+  top: 0px;
+  background-color: whitesmoke;
+  z-index: 1;
 }
 
-.one1{
+.one1 {
   color: #A335F0;
 }
 
-.two{
+.two {
   border: 1px solid black;
   border-radius: 30px;
   padding: 10px;
   width: 60%;
   display: flex;
   gap: 5px;
-  font-size:16px ;
-  
+  font-size: 16px;
+
 }
 
-.two input{
+.two input {
   border: 0px;
   width: 100%;
+  background-color: transparent;
 }
 
-.two input:focus{
+.two input:focus {
   outline: none;
 }
 
-.three{
+.three {
   display: flex;
   gap: 13px;
 }
 
 
-.main2{
+.three_1{
+  position: relative;
+  cursor:pointer ;
+}
+
+.three_1-1{
+  position: absolute;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: white;
+  top: 30px;
+  right: 0px;
+  width: 100px;
+  height: 70px;
+  display: none;
+}
+
+.three_1:hover .three_1-1{
+  display: block;
+}
+
+.main2 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -62,21 +87,40 @@ body {
 
 }
 
-.main2 p{
+.main2 p {
   background-color: #A335F0;
   color: white;
-  border-radius:30px ;
+  border-radius: 30px;
   padding: 10px;
 
 }
 
-
-.main3 img{
-  width: 100%;
+.main3 {
+  position: relative;
 }
 
 
-.main4{
+.main3 img {
+  width: 100%;
+
+}
+
+
+.main3_1 {
+  height: 80px;
+  width: 320px;
+  position: absolute;
+  top: 70px;
+  left: 100px;
+  background-color: white;
+  color: black;
+  border: 1px black solid;
+  padding: 25px;
+
+
+}
+
+.main4 {
   display: flex;
   padding: 10px;
   flex-direction: row;
@@ -84,28 +128,27 @@ body {
   flex-wrap: wrap;
 }
 
-.mainn{
+.mainn {
   padding: 15px;
-  padding-bottom:0px ;
+  padding-bottom: 0px;
 }
 
 
-.main4_1{
+.main4_1 {
   width: 275px;
 }
 
-.main4_1 img{
+.main4_1 img {
   height: 60%;
   width: 100%;
 }
 
 
-.cls5
-{
+.cls5 {
   padding: 10px;
 }
 
-.cls1{
+.cls1 {
   display: flex;
   gap: 10px;
   margin-top: 10px;
@@ -113,50 +156,50 @@ body {
 
 }
 
-.cls5 p{
+.cls5 p {
   border: 1px solid black;
-  flex-grow:1;
+  flex-grow: 1;
   flex-basis: 25%;
   padding: 10px;
-  
+
 }
 
 
-.cls6{
+.cls6 {
   padding: 10px;
 }
 
 
 
-.cls6_1{
+.cls6_1 {
   display: flex;
   flex-wrap: wrap;
   margin-top: 10px;
-  justify-content:space-between;
-  
+  justify-content: space-between;
+
 }
 
-.cls7{
+.cls7 {
   background-color: black;
   color: white;
   padding: 10px;
   padding-bottom: 20px;
 }
 
-.cls7_1{
+.cls7_1 {
   display: flex;
   gap: 45px;
   padding-top: 10px;
-  padding-left:10px ;
+  padding-left: 10px;
   padding-bottom: 45px;
 
 }
 
-.cls7_1_1 p{
+.cls7_1_1 p {
   padding: 5px;
 }
 
-.cls7_2{
+.cls7_2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
