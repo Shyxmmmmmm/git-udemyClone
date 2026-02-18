@@ -153,6 +153,19 @@ body {
   flex-wrap: wrap;
 }
 
+.main4_1{
+  cursor: pointer;
+}
+.main4_1:hover{
+  background-color: lightgray;
+  opacity: 0.8;
+}
+
+.main4_1 h3,.main4_1 p{
+  padding: 5px;
+  padding-bottom: 5px;
+}
+
 .mainn {
   padding: 15px;
   padding-bottom: 0px;
@@ -161,6 +174,7 @@ body {
 
 .main4_1 {
   width: 275px;
+  padding: 8px;
 }
 
 .main4_1 img {
@@ -178,7 +192,13 @@ body {
   gap: 10px;
   margin-top: 10px;
   flex-wrap: wrap;
+  cursor: pointer;
 
+}
+
+.cls1 p:hover{
+  background-color: black;
+  color: white;
 }
 
 .cls5 p {
@@ -201,6 +221,7 @@ body {
   flex-wrap: wrap;
   margin-top: 10px;
   justify-content: space-between;
+  gap: 10px;
 
 }
 
