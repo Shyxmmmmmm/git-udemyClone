@@ -92,8 +92,18 @@ body {
   color: white;
   border-radius: 30px;
   padding: 10px;
-
+  cursor: pointer;
+  border: #A335F0 1px solid;
 }
+
+
+.main2 p:hover{
+  background-color: white;
+  border: #A335F0 1px solid;
+  color: black;
+  transition: 1s;
+}
+
 
 .main3 {
   position: relative;
@@ -107,18 +117,33 @@ body {
 
 
 .main3_1 {
-  height: 80px;
-  width: 320px;
+  height: 60px;
+  width: 430px;
   position: absolute;
   top: 70px;
   left: 100px;
   background-color: white;
   color: black;
-  border: 1px black solid;
+  border: 2px black solid;
   padding: 25px;
-
-
+  animation-name: flash;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
+
+@keyframes flash {
+  0%{
+    transform: scale(0.2);
+    opacity: 0;
+  }
+
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+}
+
 
 .main4 {
   display: flex;
