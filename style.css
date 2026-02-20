@@ -56,12 +56,12 @@ body {
 }
 
 
-.three_1{
+.three_1 {
   position: relative;
-  cursor:pointer ;
+  cursor: pointer;
 }
 
-.three_1-1{
+.three_1-1 {
   position: absolute;
   border: 1px solid black;
   padding: 10px;
@@ -73,8 +73,12 @@ body {
   display: none;
 }
 
-.three_1:hover .three_1-1{
+.three_1:hover .three_1-1 {
   display: block;
+}
+
+.menubar {
+  display: none;
 }
 
 .main2 {
@@ -97,7 +101,7 @@ body {
 }
 
 
-.main2 p:hover{
+.main2 p:hover {
   background-color: white;
   border: #A335F0 1px solid;
   color: black;
@@ -117,31 +121,29 @@ body {
 
 
 .main3_1 {
-  height: 60px;
-  width: 430px;
   position: absolute;
-  top: 70px;
-  left: 100px;
+  top: 15%;
+  left: 8%;
   background-color: white;
   color: black;
-  border: 2px black solid;
-  padding: 25px;
-  animation-name: flash;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
+  border: 2px solid black;
+  padding: 2rem;
+  width: clamp(250px, 40%, 500px);
+  animation: flash 0.8s ease forwards;
 }
 
+
 @keyframes flash {
-  0%{
+  0% {
     transform: scale(0.2);
     opacity: 0;
   }
 
-  100%{
+  100% {
     transform: scale(1);
     opacity: 1;
   }
-  
+
 }
 
 
@@ -153,15 +155,17 @@ body {
   flex-wrap: wrap;
 }
 
-.main4_1{
+.main4_1 {
   cursor: pointer;
 }
-.main4_1:hover{
+
+.main4_1:hover {
   background-color: lightgray;
   opacity: 0.8;
 }
 
-.main4_1 h3,.main4_1 p{
+.main4_1 h3,
+.main4_1 p {
   padding: 5px;
   padding-bottom: 5px;
 }
@@ -173,8 +177,9 @@ body {
 
 
 .main4_1 {
-  width: 275px;
-  padding: 8px;
+  flex-grow: 1;
+  flex-basis: 20%;
+  margin: 5px;
 }
 
 .main4_1 img {
@@ -196,7 +201,7 @@ body {
 
 }
 
-.cls1 p:hover{
+.cls1 p:hover {
   background-color: black;
   color: white;
 }
@@ -243,10 +248,67 @@ body {
 
 .cls7_1_1 p {
   padding: 5px;
+  cursor: pointer;
+
 }
+
+
+.cls7_1_1 p:hover {
+  color: #A335F0;
+  
+}
+
 
 .cls7_2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+
+
+/*Media queries*/
+
+@media screen and (max-width:1000px) {
+  body {
+    font-size: 10px;
+  }
+
+  .main3_1{
+    width:300px;
+    top: 55px;
+    height:40px;
+  }
+
+}
+
+
+
+@media screen and (max-width:600px) {
+  .main4_1 {
+    flex-basis: 40%;
+  }
+
+  .main2 {
+    display: none;
+  }
+
+  .three,
+  .two {
+    display: none;
+  }
+
+
+  .menubar{
+    display: block;
+  }
+
+
+  .main3_1{
+    width:150px;
+    top: 23px;
+    left: 100px;
+    height:70px;
+  }
+
 }
